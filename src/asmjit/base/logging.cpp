@@ -427,7 +427,7 @@ Error Logging::formatNode(
       break;
     }
 
-    case CBNode::kNodeFuncExit: {
+    case CBNode::kNodeFuncRet: {
       const CCFuncRet* node = node_->as<CCFuncRet>();
       ASMJIT_PROPAGATE(sb.appendString("[ret]"));
       break;
